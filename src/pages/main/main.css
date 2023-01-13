@@ -78,12 +78,12 @@
 
 .layout {
     display: flex;
-    gap: 10px;
+    gap: 5px;
 }
 
 .layout__button {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
     border: none;
     cursor: pointer;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
@@ -96,16 +96,16 @@
 }
 
 .button_squares {
-    background: url('../../assets/svg/layout_squares.png');
-    background-size: 80%;
+    background: url('../../assets/svg/Layout-grid.svg');
+    background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 
 }
 
 .button_lines {
-    background: url('../../assets/svg/layout.png');
-    background-size: 70%;
+    background: url('../../assets/svg/Lines.svg');
+    background-size: 60%;
     background-position: center;
     background-repeat: no-repeat;
 }
