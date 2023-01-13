@@ -230,7 +230,6 @@ class CartPage extends Page {
         if (couponLocalstorage.length !== 0) {
             for (let i = 0; i < couponLocalstorage.length; i++) {
 
-
                 let couponLocalstorageUpdated = JSON.parse(localStorage.promoItems);
 
                 totalNumberPromo.textContent = `$${Number(totalNumber.textContent?.substring(1)) - (Number(totalNumber.textContent?.substring(1)) * 10 * (couponLocalstorageUpdated.length)) / 100}`
@@ -238,8 +237,6 @@ class CartPage extends Page {
                 totalTitle.style.textDecoration = 'line-through'
                 totalNumber.style.textDecoration = 'line-through'
                 totalTitlePromo.textContent = 'Total: ';
-
-
 
                 const promoItemsContainer = document.createElement('div');
                 promoItemsContainer.className = 'promo-container';
@@ -252,8 +249,6 @@ class CartPage extends Page {
                 promoItemsContainer.append(promoItem);
                 promoItemsContainer.append(promoButtonAddCoupon);
                 promo.append(promoItemsContainer);
-
-
 
                 promoButtonAddCoupon.addEventListener('click', (e) => {
                     e.preventDefault();
@@ -515,6 +510,8 @@ class CartPage extends Page {
         } else {
             this.drawPage(this.pageNumber, this.pageLength);
         }
+
+
 
         this.main.append(this.summary);
 

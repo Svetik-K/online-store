@@ -209,8 +209,7 @@ class ProductPage extends Page {
 
             if (itemsInStorage.some((item: Product) => item.id === this.id)) {
                 window.location.href = '#cart-page';
-                const modal = new Modal();
-                modal.draw();
+                localStorage.bought = true;
             } else {
                 const productsCounter = <HTMLDivElement>document.querySelector('.header__products-number');
                 const headerTotalSum = <HTMLDivElement>document.querySelector('.header__total-sum');
@@ -230,8 +229,7 @@ class ProductPage extends Page {
                 productsCounter.textContent = `${sumOfItems}`;
                 headerTotalSum.textContent = `${sum} $`;
                 window.location.href = '#cart-page';
-                const modal = new Modal();
-                modal.draw();
+                localStorage.bought = true;
             }
 
             

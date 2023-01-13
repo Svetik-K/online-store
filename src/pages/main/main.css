@@ -186,6 +186,7 @@
     overflow: auto;
     margin-bottom: 20px;
     padding-right: 10px;
+    color: #878787;
 }
 
 input[type='checkbox'] {

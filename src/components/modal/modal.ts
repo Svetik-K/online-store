@@ -8,10 +8,6 @@ class Modal {
         this.container.className = 'module-layer';
     }
 
-    public isNameValid() {
-        
-    }
-
     draw() {
         const formContainer = document.createElement('form');
         formContainer.className = 'form';
