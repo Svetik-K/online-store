@@ -1,8 +1,50 @@
 .header {
     width: 100%;
     border-bottom: 2px solid #efefef;
-    padding: 30px;
+}
 
+.header__contacts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-bottom: 2px solid #efefef;
+}
+
+.header__contacts a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #878787;
+    padding-left: 23px;
+}
+
+.contacts__phone {
+    background: url('../../assets/svg/phone.png');
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contacts__mail {
+    background: url('../../assets/svg/letter.png');
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contacts__location {
+    background: url('../../assets/svg/location.png');
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contacts__sign {
+    background: url('../../assets/svg/user.png');
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .header__wrapper {
@@ -11,6 +53,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 25px 30px;
 }
 
 .header__logo {

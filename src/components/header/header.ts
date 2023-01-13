@@ -9,6 +9,37 @@ class Header {
         this.container.className = 'header header__main';
     }
 
+    private createContactsSection() {
+        const contactsWrapper = document.createElement('div');
+        contactsWrapper.className = 'header__contacts contacts';
+        this.container.prepend(contactsWrapper);
+
+        const phone = document.createElement('a');
+        phone.className = 'contacts__phone';
+        phone.href = 'tel:+46760325015';
+        phone.textContent = '(+46) 76 032 50 15';
+        contactsWrapper.append(phone);
+
+        const mail = document.createElement('a');
+        mail.className = 'contacts__mail';
+        mail.href = 'mailto:allforyou_online@yahoo.com';
+        mail.textContent = 'allforyou_online@yahoo.com';
+        contactsWrapper.append(mail);
+
+        const location = document.createElement('a');
+        location.className = 'contacts__location';
+        location.target = '_blank';
+        location.href = 'https://www.google.com/maps/place/M%C3%A4ster+Samuelsgatan+69,+111+21+Stockholm/@59.332035,18.0592677,19z/data=!4m5!3m4!1s0x465f9d6099d8584b:0x5e6a93c33bd4da61!8m2!3d59.3319501!4d18.0593388';
+        location.textContent = 'Our location';
+        contactsWrapper.append(location);
+
+        const sign = document.createElement('a');
+        sign.className = 'contacts__sign';
+        // sign.href = '#';
+        sign.textContent = 'Sign In';
+        contactsWrapper.append(sign);
+    }
+
     private createLogo(logoName: string) {
         const logo = document.createElement('div');
         logo.className = ' logo header__logo';
@@ -54,6 +85,8 @@ class Header {
     }
 
     draw() {
+        this.createContactsSection();
+
         const headerWrapper = document.createElement('div');
         headerWrapper.className = 'header__wrapper';
         this.container.appendChild(headerWrapper);
@@ -77,12 +110,10 @@ class Header {
                 finalSumLocalStorage[i]['count'] = 1;
             }
             sum += finalSumLocalStorage[i]['count'] * finalSumLocalStorage[i]['price'];
-
         }
 
         totalSum.textContent = `${sum} $`;
         
-
         cartTotal.appendChild(totalText);
         cartTotal.appendChild(totalSum);
         headerWrapper.appendChild(cartTotal);
