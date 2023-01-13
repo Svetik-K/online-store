@@ -190,8 +190,24 @@
 }
 
 input[type='checkbox'] {
+    height: 15px;
+    width: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 1px solid #878787;
+    border-radius: 4px;
+    outline: none;
+    transition-duration: 0.3s;
+    background-color: #ffffff;
     margin-right: 10px;
     cursor: pointer;
+}
+
+input[type='checkbox']:checked {
+    border: 1px solid #878787;
+    background-color: #ffdd22;
 }
 
 .list-item {

@@ -26,6 +26,12 @@
     transition: all .3s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
+.product_item:hover {
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(255,221,34,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(255,221,34,1);
+    box-shadow: 0px 0px 5px 1px rgba(255,221,34,1);
+}
+
 .hide {
     display: none;
 }

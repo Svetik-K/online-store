@@ -7,7 +7,14 @@
     box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
     padding: 10px 40px 10px 20px;
     margin-bottom: 5px;
+    transition: all .3s cubic-bezier(0.4, 0, 0.2, 1) 0s;
     cursor: pointer;
+}
+
+.product-item:hover {
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(255,221,34,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(255,221,34,1);
+    box-shadow: 0px 0px 5px 1px rgba(255,221,34,1);
 }
 
 .product-item__image-wrapper {
